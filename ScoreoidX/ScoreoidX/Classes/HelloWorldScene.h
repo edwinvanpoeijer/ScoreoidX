@@ -3,7 +3,10 @@
 
 #include "cocos2d.h"
 
-class HelloWorld : public cocos2d::CCLayer
+#include "Scoreoid.h"
+#include "CrossPlatform.h"
+
+class HelloWorld : public cocos2d::CCLayer, public ScoreoidDelegate
 {
 public:
     // Method 'init' in cocos2d-x returns bool, instead of 'id' in cocos2d-iphone (an object pointer)
@@ -17,6 +20,13 @@ public:
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
+    
+    // Scoreoid delegates
+    void scoreCallback(CCDictionary* returnDictionary,const char* apiCall,int& result);
+    void playerCallback(CCDictionary* returnDictionary,const char* apiCall,int& result);
+    void gameCallback(CCDictionary* returnDictionary,const char* apiCall,int& result);
+    void scoreoidAvailable(CCDictionary* returnDictionary,const char* apiCall,int& result);
+
 };
 
 #endif // __HELLOWORLD_SCENE_H__

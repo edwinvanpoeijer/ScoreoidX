@@ -71,6 +71,16 @@ bool HelloWorld::init()
     // add the sprite as a child to this layer
     this->addChild(pSprite, 0);
     
+    /*
+     * Scoreoid
+     */
+    
+    // Set the delegate 
+    Scoreoid::GetInstance()->setDelegate(this);
+    
+    // Login to Scoreoid using an unique identifier
+    Scoreoid::GetInstance()->login(CrossPlatform::Identifiers::uniqueID(), false);
+    
     return true;
 }
 
@@ -82,3 +92,55 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
     exit(0);
 #endif
 }
+
+/*
+ * Scoreoid
+ */
+void HelloWorld::scoreoidAvailable(CCDictionary* returnDictionary,const char* apiCall,int& result)
+{
+    CCLog("ScoreCallback API-call:%s with result:%d",apiCall,result);
+    CCLog("API call:%s with result %d : %s",((CCString*)returnDictionary->objectForKey("api"))->getCString(),((CCInteger*)returnDictionary->objectForKey("status"))->getValue(),((CCString*)returnDictionary->objectForKey("message"))->getCString());
+    // Error handling
+    if (result == 0 && returnDictionary != NULL)
+    {
+        CCLog("Error : %s",((CCString*)returnDictionary->objectForKey("message"))->getCString());
+        return;
+    }
+}
+
+void HelloWorld::scoreCallback(CCDictionary* returnDictionary,const char* apiCall,int& result)
+{
+    CCLog("ScoreCallback API-call:%s with result:%d",apiCall,result);
+    CCLog("API call:%s with result %d : %s",((CCString*)returnDictionary->objectForKey("api"))->getCString(),((CCInteger*)returnDictionary->objectForKey("status"))->getValue(),((CCString*)returnDictionary->objectForKey("message"))->getCString());
+    // Error handling
+    if (result == 0 && returnDictionary != NULL)
+    {
+        CCLog("Error : %s",((CCString*)returnDictionary->objectForKey("message"))->getCString());
+        return;
+    }
+}
+
+void HelloWorld::playerCallback(CCDictionary* returnDictionary,const char* apiCall,int& result)
+{
+    CCLog("ScoreCallback API-call:%s with result:%d",apiCall,result);
+    CCLog("API call:%s with result %d : %s",((CCString*)returnDictionary->objectForKey("api"))->getCString(),((CCInteger*)returnDictionary->objectForKey("status"))->getValue(),((CCString*)returnDictionary->objectForKey("message"))->getCString());
+    // Error handling
+    if (result == 0 && returnDictionary != NULL)
+    {
+        CCLog("Error : %s",((CCString*)returnDictionary->objectForKey("message"))->getCString());
+        return;
+    }
+}
+
+void HelloWorld::gameCallback(CCDictionary* returnDictionary,const char* apiCall,int& result)
+{
+    CCLog("ScoreCallback API-call:%s with result:%d",apiCall,result);
+    CCLog("API call:%s with result %d : %s",((CCString*)returnDictionary->objectForKey("api"))->getCString(),((CCInteger*)returnDictionary->objectForKey("status"))->getValue(),((CCString*)returnDictionary->objectForKey("message"))->getCString());
+    // Error handling
+    if (result == 0 && returnDictionary != NULL)
+    {
+        CCLog("Error : %s",((CCString*)returnDictionary->objectForKey("message"))->getCString());
+        return;
+    }
+}
+

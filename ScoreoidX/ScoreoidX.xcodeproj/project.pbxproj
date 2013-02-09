@@ -206,6 +206,10 @@
 		1510A5A116C6823700AD6B7E /* CCPhysicsSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1510A5A016C6823700AD6B7E /* CCPhysicsSprite.cpp */; };
 		1510A5A816C6823700AD6B7E /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1510A5A716C6823700AD6B7E /* AppDelegate.cpp */; };
 		1510A5AB16C6823700AD6B7E /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1510A5AA16C6823700AD6B7E /* HelloWorldScene.cpp */; };
+		1514590216C69CE400CE6949 /* Scoreoid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1514590116C69CE400CE6949 /* Scoreoid.cpp */; };
+		1514590C16C69D3B00CE6949 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1514590816C69D3B00CE6949 /* NSString+MD5Addition.m */; };
+		1514590D16C69D3B00CE6949 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1514590A16C69D3B00CE6949 /* UIDevice+IdentifierAddition.m */; };
+		1514590F16C69D6600CE6949 /* CrossPlatform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1514590E16C69D6600CE6949 /* CrossPlatform.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -648,6 +652,25 @@
 		1510A5A716C6823700AD6B7E /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		1510A5A916C6823700AD6B7E /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		1510A5AA16C6823700AD6B7E /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		1510A5B216C6830700AD6B7E /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
+		1510A5B316C6830700AD6B7E /* filestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filestream.h; sourceTree = "<group>"; };
+		1510A5B516C6830700AD6B7E /* pow10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pow10.h; sourceTree = "<group>"; };
+		1510A5B616C6830700AD6B7E /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		1510A5B716C6830700AD6B7E /* strfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strfunc.h; sourceTree = "<group>"; };
+		1510A5B816C6830700AD6B7E /* prettywriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prettywriter.h; sourceTree = "<group>"; };
+		1510A5B916C6830700AD6B7E /* rapidjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rapidjson.h; sourceTree = "<group>"; };
+		1510A5BA16C6830700AD6B7E /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		1510A5BB16C6830700AD6B7E /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
+		1510A5BC16C6830700AD6B7E /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		1514590116C69CE400CE6949 /* Scoreoid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scoreoid.cpp; sourceTree = "<group>"; };
+		1514590316C69CF000CE6949 /* Scoreoid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scoreoid.h; sourceTree = "<group>"; };
+		1514590416C69CF000CE6949 /* scoreoidApi.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = scoreoidApi.plist; sourceTree = "<group>"; };
+		1514590716C69D3B00CE6949 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		1514590816C69D3B00CE6949 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		1514590916C69D3B00CE6949 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		1514590A16C69D3B00CE6949 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		1514590E16C69D6600CE6949 /* CrossPlatform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CrossPlatform.mm; path = ios/CrossPlatform.mm; sourceTree = "<group>"; };
+		1514591016C69DB700CE6949 /* CrossPlatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CrossPlatform.h; path = Classes/CrossPlatform.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -736,6 +759,8 @@
 		1510A32216C6823400AD6B7E /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				1514590E16C69D6600CE6949 /* CrossPlatform.mm */,
+				1514590616C69D3B00CE6949 /* UIDevice */,
 				1510A32316C6823400AD6B7E /* AppController.h */,
 				1510A32416C6823400AD6B7E /* AppController.mm */,
 				1510A32616C6823400AD6B7E /* RootViewController.h */,
@@ -1555,12 +1580,64 @@
 		1510A5A516C6823700AD6B7E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1514591016C69DB700CE6949 /* CrossPlatform.h */,
+				1514590016C69C8800CE6949 /* ScoreoidX */,
+				1510A5B116C6830700AD6B7E /* rapidjson */,
 				1510A5A616C6823700AD6B7E /* AppDelegate.h */,
 				1510A5A716C6823700AD6B7E /* AppDelegate.cpp */,
 				1510A5A916C6823700AD6B7E /* HelloWorldScene.h */,
 				1510A5AA16C6823700AD6B7E /* HelloWorldScene.cpp */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		1510A5B116C6830700AD6B7E /* rapidjson */ = {
+			isa = PBXGroup;
+			children = (
+				1510A5B216C6830700AD6B7E /* document.h */,
+				1510A5B316C6830700AD6B7E /* filestream.h */,
+				1510A5B416C6830700AD6B7E /* internal */,
+				1510A5B816C6830700AD6B7E /* prettywriter.h */,
+				1510A5B916C6830700AD6B7E /* rapidjson.h */,
+				1510A5BA16C6830700AD6B7E /* reader.h */,
+				1510A5BB16C6830700AD6B7E /* stringbuffer.h */,
+				1510A5BC16C6830700AD6B7E /* writer.h */,
+			);
+			name = rapidjson;
+			path = Classes/rapidjson;
+			sourceTree = "<group>";
+		};
+		1510A5B416C6830700AD6B7E /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				1510A5B516C6830700AD6B7E /* pow10.h */,
+				1510A5B616C6830700AD6B7E /* stack.h */,
+				1510A5B716C6830700AD6B7E /* strfunc.h */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		1514590016C69C8800CE6949 /* ScoreoidX */ = {
+			isa = PBXGroup;
+			children = (
+				1514590316C69CF000CE6949 /* Scoreoid.h */,
+				1514590416C69CF000CE6949 /* scoreoidApi.plist */,
+				1514590116C69CE400CE6949 /* Scoreoid.cpp */,
+			);
+			name = ScoreoidX;
+			path = Classes/ScoreoidX;
+			sourceTree = "<group>";
+		};
+		1514590616C69D3B00CE6949 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				1514590716C69D3B00CE6949 /* NSString+MD5Addition.h */,
+				1514590816C69D3B00CE6949 /* NSString+MD5Addition.m */,
+				1514590916C69D3B00CE6949 /* UIDevice+IdentifierAddition.h */,
+				1514590A16C69D3B00CE6949 /* UIDevice+IdentifierAddition.m */,
+			);
+			name = UIDevice;
+			path = ios/UIDevice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1813,6 +1890,10 @@
 				1510A5A116C6823700AD6B7E /* CCPhysicsSprite.cpp in Sources */,
 				1510A5A816C6823700AD6B7E /* AppDelegate.cpp in Sources */,
 				1510A5AB16C6823700AD6B7E /* HelloWorldScene.cpp in Sources */,
+				1514590216C69CE400CE6949 /* Scoreoid.cpp in Sources */,
+				1514590C16C69D3B00CE6949 /* NSString+MD5Addition.m in Sources */,
+				1514590D16C69D3B00CE6949 /* UIDevice+IdentifierAddition.m in Sources */,
+				1514590F16C69D6600CE6949 /* CrossPlatform.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1892,6 +1973,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ScoreoidX/libs/cocos2dx/platform/third_party/ios/libraries\"",
+					"\"$(SRCROOT)/ScoreoidX/Chartboost\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -1914,6 +1996,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ScoreoidX/libs/cocos2dx/platform/third_party/ios/libraries\"",
+					"\"$(SRCROOT)/ScoreoidX/Chartboost\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -1944,6 +2027,7 @@
 				1510A5B016C6823700AD6B7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
