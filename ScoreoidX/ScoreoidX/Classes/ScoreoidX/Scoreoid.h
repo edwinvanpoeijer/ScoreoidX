@@ -34,7 +34,7 @@ using namespace cocos2d;
 using namespace rapidjson;
 
 /*
- * STATUS
+ * SCOREOID API STATUS
  */
 #define SO_API_FAIL   -1
 #define SO_API_ERROR  0
