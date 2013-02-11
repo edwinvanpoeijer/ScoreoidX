@@ -454,7 +454,7 @@ void Scoreoid::HttpRequestLoginCallback(cocos2d::CCNode *sender, void *data)
         {
             CCLog("API: CREATE PLAYER");
             this->loginStatus = CREATEPLAYER;
-            CCString* result = CCString::createWithFormat("username=%s",this->_localPlayerID);
+            CCString* result = CCString::createWithFormat("username=%s",this->_localPlayerID.c_str());
             this->HttpRequest("http://www.scoreoid.com/api/createPlayer", result->getCString(),"createPlayer",callfuncND_selector(Scoreoid::HttpRequestLoginCallback));
         }
         else // login failed
@@ -471,7 +471,7 @@ void Scoreoid::HttpRequestLoginCallback(cocos2d::CCNode *sender, void *data)
         {
             CCLog("API: CREATE PLAYER SUCCESS");
             this->loginStatus = PLAYERCREATED;
-            CCString* result = CCString::createWithFormat("username=%s",this->_localPlayerID);
+            CCString* result = CCString::createWithFormat("username=%s",this->_localPlayerID.c_str());
             this->HttpRequest("http://www.scoreoid.com/api/getPlayer", result->getCString(),"getPlayer",callfuncND_selector(Scoreoid::HttpRequestLoginCallback));
             
         }
