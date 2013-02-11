@@ -91,7 +91,7 @@ private:
     /*
      * Local player
      */
-    const char* _localPlayerID;
+    std::string _localPlayerID;
     enum LoginStatus {IDLE,GETPLAYER,CREATEPLAYER,PLAYERCREATED,READY};
     bool _shouldCreateNewPlayer;
     LoginStatus loginStatus;
@@ -138,7 +138,7 @@ public:
     /*
      * Local player
      */
-    const char* localPlayerID() { return this->_localPlayerID;};
+    const char* localPlayerID() { return this->_localPlayerID.c_str();};
     void localPlayerID (const char* playerID) { this->_localPlayerID = playerID;};
     
     /*
